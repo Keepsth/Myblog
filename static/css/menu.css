@@ -1,16 +1,59 @@
+/*padded*/
+.m-padded-mini{
+    padding:0.2em !important;
+}
+.m-padded-tiny{
+    padding:0.3em !important;
+}
+.m-padded{
+    padding:1em !important;
+}
+
+
 .m-padded-tb-mini{
     padding-bottom: 0.2em !important;
     padding-top: 0.2em !important;
 }
+
+.m-padded-tb-tiny{
+    padding-bottom: 0.3em !important;
+    padding-top: 0.3em !important;
+}
+.m-padded-tb-small{
+    padding-bottom: 0.5em !important;
+    padding-top: 0.5em !important;
+}
+
 .m-padded-tb-massive{
     padding-bottom: 5em !important;
     padding-top: 5em !important;
 }
+
+.m-padded-tb{
+    padding-bottom: 1em !important;
+    padding-top: 1em !important;
+}
+
 .m-padded-tb-large{
     padding-bottom: 2em !important;
     padding-top: 2em !important;
 }
+.m-padded-lr{
+    padding-left:4em !important;
+    padding-right: 4em !important;
+}
 
+/*margin*/
+.m-margin-tb-tiny{
+    margin-bottom: 0.3em !important;
+    margin-top: 0.3em !important;
+}
+.m-margin-top-small{
+    margin-top: 0.5em !important;
+}
+.m-margin-top-large{
+    margin-top: 2em !important;
+}
 /*-------text-------*/
 .m-text-thin{
     font-weight: 300 !important;
@@ -25,7 +68,47 @@
     opacity: 0.8 !important;
 }
 
+
+/*color*/
+.m-black{
+    color: #333 !important;
+}
+.m-white{
+    color: aliceblue !important;
+}
+
 /*-----display-------*/
 .m-inline-block{
     display:inline-block !important;
+}
+
+/*!!!!!!!!and后面记得加空格不然不起效果*/
+@media screen and (max-width: 768px){
+    .m-mobile-hider{
+        display:none !important;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .m-mobile-show{
+        display:none !important;
+    }
+}
+
+
+/*position*/
+.m-right-top{
+    position: absolute;
+    right:0 !important;
+    top: 0 !important;
+}
+
+.m-fixed {
+    position: fixed !important;
+    z-index: 10 !important;
+}
+
+.m-right-bottom{
+    bottom:0 !important;
+    right: 0;
 }

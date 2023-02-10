@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>博客管理</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <link rel="stylesheet" href="../static/css/menu.css">
+</head>
+<body>
+<!--导航-->
+<nav class="ui inverted attached segment m-padded-tb-mini" >
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <!--stackable 可堆叠-->
+            <h2 class="ui teal header item">管理后台</h2>
+            <a href="#" class="m-item item m-mobile-hider "><i class="home icon"></i> 博客</a>
+            <a href="#" class="m-item item m-mobile-hider "><i class="idea icon"></i> 分类</a>
+            <a href="#" class="m-item item m-mobile-hider "><i class="tags icon"></i> 标签</a>
+
+            <div class="right m-item m-mobile-hider menu">
+                <div class="ui  dropdown item">
+                    <div class="text">
+                        <img class="ui avatar image" src="../static/images/touxiang.png">
+                        lyf
+                    </div>
+                    <i class="dropdown icon"></i>
+
+                    <div class="menu">
+                        <a href="#" class="item">注销</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="large sidebar icon"></i>
+        </a>
+    </div>
+</nav>
+<div class="ui bottom attached pointing menu">
+    <div class="ui container">
+        <div class="right menu">
+            <a href="#" class="item">发布</a>
+            <a href="#" class="teal active item">列表</a>
+        </div>
+    </div>
+</div>
+<!--主体-->
+<div class="ui container">
+    <div class="ui container">
+        <form action="#" method="post" class="ui segment form">
+            <div class="inline fields">
+    <!--标题-->
+                <div class="field">
+                    <input type="text" name="title" placeholder="标题">
+                </div>
+    <!--分类-->
+                <div class="field">
+                    <div class="ui  selection dropdown">
+                        <input name="tags" type="hidden">
+                        <i class="dropdown icon"></i>
+                        <div class="default text">Skills</div>
+                        <div class="menu">
+                            <div class="item" data-value="angular">Angular</div>
+                            <div class="item" data-value="css">CSS</div>
+                            <div class="item" data-value="rails">Rails</div>
+                            <div class="item" data-value="react">React</div>
+                            <div class="item" data-value="ui">UI</div>
+                        </div>
+                    </div>
+                </div>
+    <!--是否推荐-->
+                <div class="field">
+                <div class="ui checkbox">
+                    <input type="checkbox" id="recommend" class="recommend">
+                    <label for="recommend">推荐</label>
+                </div>
+                </div>
+                <div class="field">
+                    <button class="ui mini teal basic button">
+                        搜索
+                        <i class="search icon"></i>
+                    </button>
+                </div>
+            </div>
+        </form>
+        <table class="ui celled table">
+            <thead>
+            <tr>
+                <th></th>
+                <th>标题</th>
+                <th>类型</th>
+                <th>推荐</th>
+                <th>更新时间</th>
+                <th>操作</th>
+            </tr></thead>
+            <tbody>
+            <tr>
+                <td>1</td>
+                <td>java基础书</td>
+                <td>认知升级</td>
+                <td>是</td>
+                <td>2023-2-6</td>
+                <td>
+                    <a href="#" class="ui mini teal button">编辑</a>
+                    <a href="#" class="ui mini red button">删除</a>
+                </td>
+
+
+            </tr>
+
+            </tbody>
+            <tfoot>
+                <tr>
+                    <th colspan="6">
+                        <div class="ui pagination menu">
+                            <a class="item">上一页</a>
+                            <a class="item">下一页</a>
+                        </div>
+                        <a href="#" class="ui  right floated teal basic button">新建</a>
+                    </th>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+
+</div>
+<!--页尾-->
+<footer>
+    <div class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="item ">
+                        <img src="./static/images/touxiang.png" class="ui rounded image" alt="本人" >
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">功能开发中</a>
+                        <a href="#" class="item">功能开发中</a>
+                        <a href="#" class="item">功能开发中</a>
+                        <a href="#" class="item">功能开发中</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">功能开发中</a>
+                        <a href="#" class="item">功能开发中</a>
+                        <a href="#" class="item">功能开发中</a>
+                        <a href="#" class="item">功能开发中</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">最新博客</h4>
+                    <p>海外学历在背调过程中的确会更加复杂一些，但也是可以落实查询的。当然，这需要求职者本人的配合，需要求职者提供院校的联系方式，院校的地址，名称等等。</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-space m-opacity-mini">Copyright @ 2022 Designed by Keepsth</p>
+
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+
+
+<script>
+    $(".menu.toggle").click(function(){
+        $(".m-item").toggleClass('m-mobile-hider');
+    });
+
+    $('.ui.dropdown').dropdown();
+</script>
+
+</body>
+</html>

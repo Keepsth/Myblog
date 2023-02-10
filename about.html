@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>About page</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+    <link rel="stylesheet" href="./static/css/menu.css">
+</head>
+<body>
+<!--导航-->
+<nav class="ui inverted attached segment m-padded-tb-mini" >
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <!--stackable 可堆叠-->
+            <h2 class="ui teal header item">Blog</h2>
+            <a href="#" class="m-item item m-mobile-hider "><i class="home icon"></i> 首页</a>
+            <a href="#" class="m-item item m-mobile-hider "><i class="idea icon"></i> 分类</a>
+            <a href="#" class="m-item item m-mobile-hider "><i class="tags icon"></i> 标签</a>
+            <a href="#" class="m-item item m-mobile-hider "><i class="clone icon"></i> 归档</a>
+            <a href="#" class="m-item item m-mobile-hider "><i class="info icon"></i> 关于我们</a>
+            <div class="right item">
+                <div class="ui search">
+                    <div class="ui icon input">
+                        <input class="prompt" type="text" placeholder="请输入关键字">
+                        <i class="search icon"></i>
+                    </div>
+                    <div class="results"></div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="large sidebar icon"></i>
+        </a>
+    </div>
+</nav>
+<!--主体-->
+<div class="m-padded-tb-large">
+    <div class="ui container">
+        <div class="ui stackable grid">
+            <div class="eleven wide column">
+                <img src="static/images/touxiang.png" alt="" class="ui rounded image">
+            </div>
+            <div class="five wide column">
+                <div class="ui top attached segment">
+                    <div class="ui header">
+                        关于我
+                    </div>
+                </div>
+                <div class="ui attached segment">
+                    <p class="m-text-thin">This is my blog as to record my life </p>
+                    <p class="m-text-thin">Happy  </p>
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui orange basic left pointing label">编程</div>
+                    <div class="ui orange basic left pointing label">美食</div>
+                    <div class="ui orange basic left pointing label">旅行</div>
+                    <div class="ui orange basic left pointing label">阅读</div>
+                </div>
+                <div class="ui attached segment">
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">javascript</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">java</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">react</div>
+                    <div class="ui teal basic left pointing label m-margin-tb-tiny">vue</div>
+                </div>
+                <div class="ui bottom attached segment">
+                    <a href="#" class="ui circular icon button"><i class="github icon"></i></a>
+                    <a href="#" class="ui circular icon button"><i class="weixin icon"></i></a>
+                    <a href="#" class="ui qq circular icon button" data-content="1040557472" data-position="bottom center"><i class="qq icon"></i></a>
+                </div>
+
+                <div class="ui wechat-qr flowing popup transition hidden">
+                    <img src="./static/images/wechat.jpg" alt="" class="ui rounded image" style="width: 100px">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+
+<!--页尾-->
+<footer>
+    <div class="ui inverted vertical segment m-padded-tb-massive">
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid">
+                <div class="three wide column">
+                    <div class="item ">
+                        <img src="static/images/touxiang.png" class="ui rounded image" alt="本人" >
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">功能开发中</a>
+                        <a href="#" class="item">功能开发中</a>
+                        <a href="#" class="item">功能开发中</a>
+                        <a href="#" class="item">功能开发中</a>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h4 class="ui inverted header">最新博客</h4>
+                    <div class="ui inverted link list">
+                        <a href="#" class="item">功能开发中</a>
+                        <a href="#" class="item">功能开发中</a>
+                        <a href="#" class="item">功能开发中</a>
+                        <a href="#" class="item">功能开发中</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h4 class="ui inverted header">最新博客</h4>
+                    <p>海外学历在背调过程中的确会更加复杂一些，但也是可以落实查询的。当然，这需要求职者本人的配合，需要求职者提供院校的联系方式，院校的地址，名称等等。</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-text-thin m-text-space m-opacity-mini">Copyright @ 2022 Designed by Keepsth</p>
+
+        </div>
+    </div>
+</footer>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2.0/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+
+
+<script>
+    $(".menu.toggle").click(function(){
+        $(".m-item").toggleClass('m-mobile-hider');
+    });
+
+    $(".qq").popup();
+
+
+</script>
+
+</body>
+</html>
